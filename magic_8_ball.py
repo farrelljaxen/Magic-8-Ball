@@ -1,7 +1,7 @@
 import random
 
-
-while True:
+play = True
+while play:
     print("Enter 'help' if you need to know the instructions of the game")
     question = input("Ask the magic 8 ball any question (Press 'q' to quit): \n>").lower()
 
@@ -40,8 +40,8 @@ while True:
     elif answer == 8:
         print("My reply is no\n")
 
-
-
-
-
+    again = input("You want to play again?: \n")
+    if again == 'no':
+        print("Thanks for playing!")
+        break
 
